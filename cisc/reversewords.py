@@ -24,8 +24,7 @@ def reverseWordsAlgo(S: str):
     ar = []
     start, end = 0, 0
     for i in range(len(S)):
-        c = S[i]
-        if c == ".":
+        if (c := S[i]) == ".":
             end = i
             ar.append(S[start: end])
             start = end + 1
